@@ -1,10 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import ECard from './ECard';
 
 
 export default function Home() {
 
-    const [event, setEvent] = useState([]);
+    const [Events, setEvent] = useState([]);
 
     useEffect(() => {
 
@@ -20,6 +21,11 @@ export default function Home() {
     }, []);
  
   return (
-    <div>Home</div>
+    <div className='result'>
+    {Events.map((event, index) => (
+      <ECard key={index} event={event} />
+    ))}
+
+    </div>
   )
 }
