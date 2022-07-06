@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function ECard({event}) {
+
+    function truncateText(string, n) {
+        return string?.length > n ? string.substr(0, n-1) + "..."
+        : "No des";
+    }
   return (
    <div className='card-container'>
        <div className='card'>
@@ -8,7 +13,7 @@ export default function ECard({event}) {
           <div className='card-element'>
               <h2>{event.fields.title}</h2>
               <h5>{event.fields.description}</h5>
-              <p>{event.fields.free_text}</p>
+              <p>{truncateText(event.fields.free_text, 150)}</p>
           </div>
       </div>
    </div>

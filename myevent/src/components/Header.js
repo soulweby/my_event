@@ -12,7 +12,9 @@ export default function Header() {
         <Link to="/event" className='link'>Event</Link>
         </div>
         <form className='navform'>
-          <input  type="search" placeholder="Search Event"/>
+          <input  type="search" placeholder="Search Event"
+             onChange={(e) => console.log(e.target.value)} 
+          />
           <input  type="submit" value="recherche"/>
         </form>
     </nav>

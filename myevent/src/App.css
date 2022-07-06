@@ -84,23 +84,33 @@ input[type=submit] {
 }
 
 img {
-  border-top-left-radius: 100px 100px;
+  border-top-left-radius: 35px 35px;
+  border-bottom-left-radius: 35px 35px;
   height: 400px;
   width: 400px;
-  box-shadow: 0 0 5px #1a1a574b;
+  /* box-shadow: 0 0 5px #1a1a574b; */
+ 
 
 }
 
 .card-container{
   display: flex;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
 }
 
 .card {
   display: flex;
   width: 60%;
-  margin: 2rem 0.4rem;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.329);
+
+  border-radius: 30px;
+
+  box-shadow: 0  35px 65px 0 rgba(86, 184, 149, 0.42),
+  inset 0 -10px 15px 0 rgba(113, 235, 191, 0.8);
+ 
 
 }
 
@@ -110,13 +120,16 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
   border-top-right-radius: 100px 100px;
-  /* padding: 4rem; */
   margin: 20px;
+  /* box-shadow: 0  35px 65px 0 rgba(86, 184, 149, 0.42),
+  inset 0 -10px 15px 0 rgba(113, 235, 191, 0.8); */
 }
 
 p{
-  font-size: 12px;
+  font-size: 15px;
+ 
 }
 
 
